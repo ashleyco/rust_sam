@@ -1,6 +1,6 @@
 mod app;
 use my_project::game;
-use my_project::unit::{Enemy, Wall, Player};
+use my_project::unit::{Enemy, Wall};
 
 fn main() {
     let mut game = game::Game::builder()
