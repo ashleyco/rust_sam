@@ -118,7 +118,7 @@ impl Game {
         // add random walls
         for _ in 0..self.n_random_walls {
             let mut wall = Wall::default();
-            wall.set_rand_position(&mut self.rng, (1..(self.width - 1) as u32), (1..(self.height - 1) as u32));
+            wall.set_rand_position(&mut self.rng, 1..(self.width - 1) as u32, 1..(self.height - 1) as u32);
 
 
             self.walls.push(wall);
